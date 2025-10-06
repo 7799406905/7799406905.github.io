@@ -3,82 +3,109 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mahesh G - Data Engineer Portfolio</title>
+<title>Mahesh Gopasu - Data Engineer Portfolio</title>
 <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; color: #333; }
-    header { background-color: #0077b6; color: white; text-align: center; padding: 60px 20px; }
-    header h1 { margin: 0; font-size: 3em; }
-    header p { margin: 10px 0; font-size: 1.1em; }
+    body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background: #f0f4f8; color: #333; }
+    header { background-color: #0077b6; color: white; text-align: center; padding: 50px 20px; }
+    header h1 { margin: 10px 0 5px; font-size: 2.8em; }
+    header h2 { margin: 5px 0; font-weight: normal; }
+    header p { margin: 8px 0; font-size: 1.1em; }
+    header img { width: 150px; height: 150px; border-radius: 50%; border: 4px solid white; margin-bottom: 15px; }
+    
     a { color: #023e8a; text-decoration: none; }
     a:hover { text-decoration: underline; }
+
     section { padding: 50px 20px; max-width: 1000px; margin: auto; }
-    h2 { color: #0077b6; margin-bottom: 20px; border-bottom: 2px solid #0077b6; display: inline-block; padding-bottom: 5px; }
-    .skills, .certifications, .achievements { display: flex; flex-wrap: wrap; gap: 15px; }
-    .skill-box, .cert-box, .achieve-box { background: #e0f7fa; padding: 15px 20px; border-radius: 8px; flex: 1 1 200px; }
+    h2 { color: #0077b6; margin-bottom: 20px; border-bottom: 3px solid #0077b6; display: inline-block; padding-bottom: 5px; }
+
+    .skills, .certifications, .achievements, .education { display: flex; flex-wrap: wrap; gap: 15px; }
+    .skill-box, .cert-box, .achieve-box, .edu-box { background: #caf0f8; padding: 15px 20px; border-radius: 10px; flex: 1 1 250px; transition: transform 0.3s; }
+    .skill-box:hover, .cert-box:hover, .achieve-box:hover, .edu-box:hover { transform: translateY(-5px); }
+
     .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-    .project-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 3px 6px rgba(0,0,0,0.1); }
+    .project-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s; }
+    .project-card:hover { transform: translateY(-5px); }
     .project-card h3 { margin-top: 0; color: #023e8a; }
-    .project-card ul { margin: 5px 0 0 15px; }
-    .contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin: 5px 0 15px; border-radius: 5px; border: 1px solid #ccc; }
-    .contact-form button { background-color: #0077b6; color: white; border: none; padding: 12px 25px; cursor: pointer; border-radius: 5px; font-size: 1em; }
-    .contact-form button:hover { background-color: #023e8a; }
+    .project-card ul { margin: 10px 0 0 15px; }
+
+    footer { text-align: center; padding: 30px 10px; background-color: #023e8a; color: white; }
 </style>
 </head>
 <body>
 
 <!-- Header -->
 <header>
-    <h1>Mahesh G</h1>
-    <p>Data Engineer | Hyderabad, India</p>
-    <p>Email: <a href="mailto:Mahesh06955@gmail.com">Mahesh06955@gmail.com</a> | 
-       <a href="https://www.linkedin.com/in/mahesh-gopasu-425953219">LinkedIn</a> | 
-       <a href="https://github.com/maheshgopasu">GitHub</a>
+    <img src="profile.jpg" alt="Mahesh Gopasu">
+    <h1>Mahesh Gopasu</h1>
+    <h2>Data Engineer | Hyderabad, India</h2>
+    <p>Mobile: +91 7799406905 | Email: <a href="mailto:Mahesh06955@gmail.com">Mahesh06955@gmail.com</a></p>
+    <p>
+        <a href="https://www.linkedin.com/in/mahesh-gopasu-425953219">LinkedIn</a> | 
+        <a href="https://github.com/maheshgopasu">GitHub</a>
     </p>
     <p>Results-driven Data Engineer with 2+ years of experience in building, optimizing, and migrating large-scale data pipelines on AWS, Hadoop, and Azure ecosystems. Skilled in PySpark, Hive, Spark SQL, and Talend with a focus on ETL automation, performance tuning, and cost optimization.</p>
 </header>
 
-<!-- Skills Section -->
+<!-- Skills -->
 <section>
     <h2>Skills</h2>
     <div class="skills">
-        <div class="skill-box"><strong>Big Data:</strong> Hadoop, Spark (PySpark, SQL), Hive, Kafka</div>
+        <div class="skill-box"><strong>Big Data & Processing:</strong> Hadoop, Spark (PySpark, SQL), Hive, Kafka</div>
+        <div class="skill-box"><strong>Cloud Platforms:</strong> AWS (S3, EMR, EC2), Azure (Data Lake, Databricks)</div>
         <div class="skill-box"><strong>ETL & Orchestration:</strong> Talend, Airflow</div>
-        <div class="skill-box"><strong>Cloud:</strong> AWS (S3, EMR, EC2), Azure (Data Lake, Databricks)</div>
-        <div class="skill-box"><strong>Databases/Warehousing:</strong> Snowflake, MySQL, SQL Server</div>
+        <div class="skill-box"><strong>Databases:</strong> Snowflake, MySQL, SQL Server</div>
         <div class="skill-box"><strong>Programming:</strong> Python, SQL, Shell Scripting</div>
-        <div class="skill-box"><strong>Tools & Workflow:</strong> GitHub, CI/CD, JIRA, Agile</div>
+        <div class="skill-box"><strong>Tools & Workflow:</strong> GitHub, JIRA, CI/CD, Agile</div>
     </div>
 </section>
 
-<!-- Projects Section -->
+<!-- Education -->
+<section>
+    <h2>Education</h2>
+    <div class="education">
+        <div class="edu-box">
+            <strong>Bachelor of Technology (CSE)</strong><br>
+            Guru Nanak Institutions Technical Campus, Hyderabad<br>
+            2018–2022 | CGPA: 7.48
+        </div>
+        <div class="edu-box">
+            <strong>Intermediate (TSWRJC Boys)</strong><br>
+            JP Nagar, Hyderabad<br>
+            2016–2018 | Percentage: 85.4%
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
 <section>
     <h2>Projects</h2>
     <div class="projects">
         <div class="project-card">
-            <h3>Human Healthcare Data Pipeline</h3>
-            <p><strong>Role:</strong> Data Engineer | <strong>Tech Stack:</strong> Hadoop, PySpark, Hive, AWS EMR/S3, Airflow</p>
+            <h3>Human Healthcare Data Pipeline (Wipro)</h3>
+            <p><strong>Duration:</strong> March 2023 – March 2025</p>
+            <p><strong>Role:</strong> Data Engineer | <strong>Tech Stack:</strong> AWS, PySpark, Hive, Airflow, S3, EMR</p>
             <ul>
-                <li>Automated batch ETL workflows using Airflow aligned with operational schedules.</li>
-                <li>Processed raw healthcare data using Spark on AWS EMR (PySpark & Spark SQL).</li>
-                <li>Applied data cleansing, transformations, and SCD logic to maintain master data in S3.</li>
-                <li>Reduced AWS EMR costs by 20% through Spark optimizations (partitioning, caching, tuning).</li>
+                <li>Automated batch workflows with Airflow</li>
+                <li>Processed raw data into curated S3 layers</li>
+                <li>Implemented SCD logic in PySpark for master data</li>
+                <li>Reduced job runtime by 25%</li>
             </ul>
         </div>
 
         <div class="project-card">
-            <h3>Data Migration: HDFS → Azure Data Lake</h3>
-            <p><strong>Role:</strong> Consultant Data Engineer | <strong>Tech Stack:</strong> Talend, Databricks, Hadoop, Azure Data Lake</p>
+            <h3>Data Migration: Talend Jobs to Azure Data Lake (Skapare IT Solutions)</h3>
+            <p><strong>Duration:</strong> June 2025 – September 2025</p>
+            <p><strong>Role:</strong> Consultant Data Engineer | <strong>Tech Stack:</strong> Talend, Azure Data Lake, Databricks, Hadoop</p>
             <ul>
-                <li>Migrated 40+ Talend jobs from on-prem HDFS to Azure Data Lake.</li>
-                <li>Improved performance with Azure-native commands for parallel processing and faster transfers.</li>
-                <li>Integrated Talend with Databricks Spark clusters for large-scale processing.</li>
-                <li>Enhanced security via context variables & encrypted passwords; deployed jobs via WinSCP.</li>
+                <li>Migrated 40+ Talend jobs from on-prem HDFS</li>
+                <li>Integrated Databricks with Talend for parallel processing</li>
+                <li>Enhanced security with encrypted passwords and context variables</li>
             </ul>
         </div>
     </div>
 </section>
 
-<!-- Certifications & Achievements -->
+<!-- Certifications -->
 <section>
     <h2>Certifications</h2>
     <div class="certifications">
@@ -87,24 +114,21 @@
     </div>
 </section>
 
+<!-- Achievements -->
 <section>
     <h2>Achievements</h2>
     <div class="achievements">
         <div class="achieve-box">Improved Spark job performance by 25%</div>
         <div class="achieve-box">Reduced AWS EMR costs by 20%</div>
+        <div class="achieve-box">Migrated 40+ Talend jobs to Azure Data Lake</div>
+        <div class="achieve-box">Automated scalable ETL pipelines with Airflow</div>
     </div>
 </section>
 
-<!-- Contact Section -->
-<section>
-    <h2>Contact Me</h2>
-    <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-</section>
+<!-- Footer -->
+<footer>
+    &copy; 2025 Mahesh Gopasu | Built with ❤️
+</footer>
 
 </body>
 </html>
